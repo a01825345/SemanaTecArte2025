@@ -3,6 +3,8 @@ from funciones import triangulo, rectangulo, circulo
 
 data = pd.read_csv("figuras.csv")
 
+print("Procesando figuras ... \n")
+
 for index, row in data.iterrows():
 	if row['FIGURA'] == "t":
 		area = triangulo(row['MEDIDA1'], row['MEDIDA2'])
